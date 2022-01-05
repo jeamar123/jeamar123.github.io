@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts.scss";
+
+html {
+  box-sizing: border-box;
+}
+*{
+  font-family: 'Helvetica Light', Arial;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1;
+  font-size: 16px;
+  background-color: #fff;
+  /* color: $primary-font-color; */
+  -webkit-font-smoothing: antialiased;
+  color: #272643;
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+  width: 3px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: #444;
+}
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+
+
+.ff-roboto{
+  font-family: 'Roboto Light';
+}
+.ff-nunito{
+  font-family: 'Nunito Light';
+}
+.ff-helvetica{
+  font-family: 'Helvetica Light';
+}
+.ff-poppins{
+  font-family: 'Poppins Light';
+}
+.ff-open-sans{
+  font-family: 'Open Sans';
+}
+
+// Bold
+.ff-roboto-bold{
+  font-family: 'Roboto Bold';
+}
+.ff-nunito-bold{
+  font-family: 'Nunito Medium';
+}
+.ff-helvetica-bold{
+  font-family: 'Helvetica Medium';
+}
+.ff-poppins-bold{
+  font-family: 'Poppins Medium';
+}
+
+
+.custom-shadow{
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+.custom-input-shadow{
+  -webkit-box-shadow: inset 0 1px 2px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: inset 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px 0px rgb(0 0 0 / 10%);
+}

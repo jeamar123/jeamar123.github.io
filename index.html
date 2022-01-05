@@ -1,563 +1,429 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114115155-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114115155-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'UA-114115155-1');
-    </script>
+    gtag('config', 'UA-114115155-1');
+  </script>
 
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='-1'>
-    <meta http-equiv='pragma' content='no-cache'>
-    <title>Jeamar Libres - Portfolio</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='-1'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>J-mar Libres</title>
 
-    <link rel="shortcut icon" href="assets/img/logo/jl-logo-blue.png" type="image/ico">
+  <link rel="shortcut icon" href="assets/img/logo/jl-logo-black.png" type="image/ico">
 
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/preloader.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/hover.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-
-  </head>
-  <body >
-    <div id="top-div"></div>
-    
-    <a href="#top-div" id="backTop-container">
-      <div class="backTop-wrapper text-center">
-        <i class="fa fa-angle-double-up font-20 color-white"></i>
+  <header id="main-header" class="bg-black relative z-50">
+    <div class="flex items-center mx-auto w-11/12 max-w-5xl py-1 sm:py-5">
+      <div class="flex-1">
+        <a href="javascript:void(0)" class="">
+          <img src="assets/img/logo/jl-logo-tran-white.png" alt="" class="w-14 hover:opacity-50">
+        </a>
       </div>
-    </a>
-
-    <div class="sidenav-dots-container">
-      <ul class="sidenav-ul">
-        <li class="active">
-          <a href="#top-div">
-            <span>Top</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#expertise-container">
-            <span>Expertise</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#skillset-container">
-            <span>Skills and Technologies</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#mobile-proj">
-            <span>Mobile Projects</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#web-proj">
-            <span>Web Projects</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#footer-container">
-            <span>Contact</span>
-            <i class="fa fa-circle"></i>
-            <i class="fa fa-circle-o"></i>
-          </a>
-        </li>
-      </ul>
+      <div id="nav-menu" class="absolute sm:relative hidden sm:flex sm:justify-center md:justify-end top-16 sm:top-0 left-0 sm:left-0 w-full sm:w-auto flex-col sm:flex-row z-50 bg-black sm:bg-transparent border-t border-gray-500 sm:border-0">
+        <!-- border-b border-white -->
+        <div class="text-base text-white mx-0 sm:mx-4 p-4 sm:p-0 font-semibold tracking-wide cursor-pointer hover:opacity-60 flex items-center">
+          <a href="#about-me">about me</a>
+        </div>
+        <div class="text-base text-white mx-0 sm:mx-4 p-4 sm:p-0 font-semibold tracking-wide cursor-pointer hover:opacity-60 flex items-center">
+          <a href="#projects">projects</a>
+        </div>
+        <div class="text-base text-white mx-0 sm:mx-4 p-4 sm:p-0 font-semibold tracking-wide cursor-pointer hover:opacity-60 flex items-center">
+          <a href="#contact">contact</a>
+        </div>
+      </div>
+      <div class="text-4xl text-white mx-5 cursor-pointer hover:opacity-60 flex items-center">
+        <a href="https://github.com/jeamar123" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <div class="block sm:hidden text-2xl text-white mx-4 cursor-pointer hover:opacity-60 flex items-center">
+        <a href="javascript:void(0)" id="mobile-header-toggle">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
+  </header>
 
-    <div class="header-logo hvr-buzz">
-      <img id="logo-white" src="assets/img/logo/jl-logo-tran-white.png">
-      <img id="logo-black" src="assets/img/logo/jl-logo-tran-black.png" style="display: none">
+  <section id="about-me" class="w-full">
+    <div class="my-5 px-8 md:px-3 pt-5 md:pt-20 pb-10 mx-auto w-11/12 max-w-5xl">
+      <div class="flex flex-col-reverse md:flex-row items-center w-full pb-0 md:pb-10 md:border-b mb-14">
+        <div class="w-full md:w-1/2">
+          <h4 class="text-6xl sm:text-5xl md:text-6xl font-bold ff-poppins-bold text-black mb-3 md:mb-8">Hey, I'm Jeamar</h4>
+
+          <p class="text-xl md:text-xl ff-poppins leading-snug md:leading-normal mb-5 text-c-5f5e5e">I'm a Web and Mobile developer based in Cagayan de Oro, Philippines.</p>
+
+          <p class="text-base md:text-lg ff-helvetica leading-snug md:leading-normal text-black">"I like coffee, puzzle games and I love reading <br class="hidden md:block">manga. I enjoy coding and solving logical problems." </p>
+        </div>
+        <div class="w-full md:w-1/2 h-full text-center mb-10 md:mb-0">
+          <img src="assets/img/profpic.JPG" class="rounded-full w-7/12 md:w-8/12 mx-auto">
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center w-full">
+        <div class="mx-2 md:mx-5 text-xl md:text-4xl text-black border rounded custom-shadow w-14 py-2 bg-gray-100 hover:bg-gray-700 hover:text-white text-center">
+          <a href="https://www.facebook.com/jeamarpol" target="_blank" class="w-full h-full block">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+        <div class="mx-2 md:mx-5 text-xl md:text-4xl text-black border rounded custom-shadow w-14 py-2 bg-gray-100 hover:bg-gray-700 hover:text-white text-center">
+          <a href="https://plus.google.com/u/0/102140157793861755091" target="_blank" class="w-full h-full block">
+            <i class="fa fa-google"></i>
+          </a>
+        </div>
+        <div class="mx-2 md:mx-5 text-xl md:text-4xl text-black border rounded custom-shadow w-14 py-2 bg-gray-100 hover:bg-gray-700 hover:text-white text-center">
+          <a href="https://www.instagram.com/jmrplbrs/" target="_blank" class="w-full h-full block">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="mx-2 md:mx-5 text-xl md:text-4xl text-black border rounded custom-shadow w-14 py-2 bg-gray-100 hover:bg-gray-700 hover:text-white text-center">
+          <a href="https://twitter.com/jeamarpol" target="_blank" class="w-full h-full block">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <div class="mx-2 md:mx-5 text-xl md:text-4xl text-black border rounded custom-shadow w-14 py-2 bg-gray-100 hover:bg-gray-700 hover:text-white text-center">
+          <a href="https://www.linkedin.com/in/jeamar-paul-libres-529263117/" target="_blank" class="w-full h-full block">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    
-    <header id="header-container">
+  </section>
+
+  <section id="projects" class="bg-c-fafafa">
+    <div class="px-8 md:px-3 pt-10 pb-10 mx-auto w-11/12 max-w-5xl">
+      <h1 class="ff-poppins-bold text-2xl md:text-3xl text-center md:text-left font-bold text-black mb-10">Projects</h1>
       
-      <div class="header-content">
-        <div class="header-box">
-          <div class="header-user-image">
-            <img src="assets/img/profpic.JPG">
-          </div>
-
-          <div class="user-name">
-            <p class="hvr-buzz-out">Jeamar Libres</p>
-          </div>
-
-          <div class="user-skills">
-            
-            <p class="hvr-buzz-out">Front-end Developer &bull; React Native Developer</p>
-          </div>
-
-          <div class="user-social">
-            <div class="social hvr-hang">
-              <a href="https://www.facebook.com/jeamarpol" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </div>
-            <div class="social hvr-bob">
-              <a href="https://plus.google.com/u/0/102140157793861755091" target="_blank">
-                <i class="fa fa-google"></i>
-              </a>
-            </div>
-            <div class="social hvr-hang">
-              <a href="https://www.instagram.com/jmrplbrs/" target="_blank">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </div>
-            <div class="social hvr-bob">
-              <a href="https://twitter.com/jeamarpol" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </div>
-            <div class="social hvr-hang">
-              <a href="https://www.linkedin.com/in/jeamar-paul-libres-529263117/" target="_blank">
-                <i class="fa fa-linkedin-square"></i>
-              </a>
-            </div>
-            <div class="social hvr-bob">
-              <a href="https://github.com/jeamar123" target="_blank">
-                <i class="fa fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section id="main-body-section">
-    
-      <div id="expertise-container" class="section-item expertise-container" >
-
-        <div class="expertise wow fadeInRight" data-wow-delay=".5s">
-          <div class="img-wrapper hvr-float">
-            <i class="fa fa-magic"></i>
-          </div>
-          <div class="white-space-20"></div>
-          <p class="expertise-title">PSD to HTML</p>
-          <p class="expertise-desc">
-            Writing HTML and CSS that utilizes the imagery you exported from Photoshop or other image editor. Many web companies have used PSD to HTML as a template for team workflows.
-          </p>
-        </div>
-
-        <div class="expertise wow fadeInRight" data-wow-delay="1s">
-          <div class="img-wrapper hvr-float">
-            <i class="fa fa-code"></i>
-          </div>
-          <div class="white-space-20"></div>
-          <p class="expertise-title">Web Development</p>
-          <p class="expertise-desc">
-            Build, Create, and Maintain websites. Includes aspects such as web design, web publishing, web programming, and database management.
-          </p>
-        </div>
-
-        <div class="expertise wow fadeInRight" data-wow-delay="1.5s">
-          <div class="img-wrapper hvr-float">
-            <i class="fa fa-mobile"></i>
-          </div>
-          <div class="white-space-20"></div>
-          <p class="expertise-title">Mobile Development</p>
-          <p class="expertise-desc">
-            Develop applications that includes set of processes and procedures involved in writing software for small, wireless computing devices such as smartphones or tablets.
-          </p>
-        </div>
-
-      </div>
-
-      <div id="skillset-container" class="section-item skillset-container" >
-
-        <div class="skills-content">
-          <div class="skills wow fadeInDownBig">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/html.png">
-            </div>
-            <p>Html</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".1s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/css.png">
-            </div>
-            <p>Css</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".2s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/js.png">
-            </div>
-            <p>Javascript</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".3s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/bootstrap.png">
-            </div>
-            <p>Bootstrap</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".4s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/materialize.png">
-            </div>
-            <p>Materializecss</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".5s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/jquery.png">
-            </div>
-            <p>Jquery</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".6s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/angularjs.svg">
-            </div>
-            <p>Angularjs</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".7s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/github.png">
-            </div>
-            <p>Github</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay=".8s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/ionic.png">
-            </div>
-            <p>Ionic</p>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
+        <div class="border rounded-md p-3 bg-white shadow-sm h-full">
+          <a href="http://budgetexpense.jmardev.com/" target="_blank" class="w-full">
+            <img src="assets/img/projects/budgetExpense.png" class="border rounded-sm w-full">
+          </a>
           
-        </div>
-        <div class="skills-content">
+          <div class="flex px-1 pt-2">
+            <div class="flex-1">
+              <p class="ff-helvetica font-semibold text-lg tracking-wider mb-2">Budget Expense</p>
+              <p class="ff-helvetica text-sm text-c-5f5e5e flex-1 mb-4">A system for Tracking my budget and expenses.</p>
 
-          <div class="skills wow fadeInDownBig" data-wow-delay=".9s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/nodejs.png">
+              <div class="flex items-center flex-wrap">
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Laravel
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Vuejs
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  TailwindCSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  HTML
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  CSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  PHP
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JavaScript
+                </div>
+              </div>
             </div>
-            <p>Nodejs</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1s">
-            <div class="img-wrapper" style="width: 105px;">
-              <img src="assets/img/techs/php.png">
+            <div class="flex items-start justify-end">
+              <a href="http://budgetexpense.jmardev.com/" class="ff-nunito ml-5 flex items-center justify-end text-blue-500 font-bold hover:underline">
+                Visit 
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-104174d2=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" data-v-104174d2=""></path></svg>
+              </a>
             </div>
-            <p>Php</p>
           </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.1s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/laravel.png">
-            </div>
-            <p>Laravel</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.2s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/codeigniter.png">
-            </div>
-            <p>Codeigniter</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.3s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/mysql.png">
-            </div>
-            <p>Mysql</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.4s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/mongodb.png">
-            </div>
-            <p>MongoDB</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.6s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/android.png">
-            </div>
-            <p>Android</p>
-          </div>
-          <div class="skills wow fadeInDownBig" data-wow-delay="1.6s">
-            <div class="img-wrapper">
-              <img src="assets/img/techs/ios.png">
-            </div>
-            <p>Ios</p>
-          </div>
+        </div>
+
+        <div class="border rounded-md p-3 bg-white shadow-sm h-full">
+          <a href="https://thebpalace.com/" target="_blank" class="w-full">
+            <img src="assets/img/projects/thebosspalace.png" class="border rounded-sm w-full">
+          </a>
           
-        </div>
+          <div class="flex px-1 pt-2">
+            <div class="flex-1">
+              <p class="ff-helvetica font-semibold text-lg tracking-wider mb-2">The Boss Palace</p>
+              <p class="ff-helvetica text-sm text-c-5f5e5e flex-1 mb-4">Landing page for the boss palace.</p>
 
-      </div>
-
-      <div class="section-item projects-container">
-        <div id="mobile-proj">
-          <div class="section-title wow fadeInRight mobile-project">
-            <p>Mobile Projects</p>
-          </div>
-
-          <div class="projects-box">
-            <div class="project wow fadeInUp">
-                <div class="project-img">
-                  <img src="assets/img/projects/mednefits-app.png">
+              <div class="flex items-center flex-wrap">
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Shopify
                 </div>
-                <div class="project-desc">
-                  <p class="project-name">Mednefits App</p>
-                  <p class="project-info">
-                    Mednefits is health care benefits digital platform aimed to help companies provide health care benefits to their employees at lower costs
-                  </p>
-
-                  <div class="mobile-download">
-                    <a class="google-play" href="">
-                      <img src="assets/img/techs/google-play.png" alt="">  
-                    </a>
-
-                    <a class="app-store" href="">
-                      <img src="assets/img/techs/app-store.png" alt="">  
-                    </a>
-                  </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Liquid
                 </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  TailwindCSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  HTML
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  CSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  PHP
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JavaScript
+                </div>
+              </div>
             </div>
-            
-            <div class="project wow fadeInUp">
-                <div class="project-img">
-                  <img src="assets/img/projects/nearest-app.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Nearest App</p>
-                  <p class="project-info">
-                    Nearest.com is a socially conscious search engine that features the nearest businesses that provide the product or service being searched.
-                  </p>
-
-                  <div class="mobile-download">
-                    <a class="google-play" href="">
-                      <img src="assets/img/techs/google-play.png" alt="">  
-                    </a>
-
-                    <a class="app-store" href="">
-                      <img src="assets/img/techs/app-store.png" alt="">  
-                    </a>
-                  </div>
-                </div>
+            <div class="flex items-start justify-end">
+              <a href="https://thebpalace.com/" class="ff-nunito ml-5 flex items-center justify-end text-blue-500 font-bold hover:underline">
+                Visit 
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-104174d2=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" data-v-104174d2=""></path></svg>
+              </a>
             </div>
-
           </div>
         </div>
 
-        <div class="white-space-50"></div>
-        <div class="white-space-50"></div>
-        <div class="white-space-50"></div>
-        <div class="white-space-50"></div>
+        <div class="border rounded-md p-3 bg-white shadow-sm h-full">
+          <a href="http://empatkali.co.id" target="_blank" class="flex w-full">
+            <img src="assets/img/projects/empatkali.png" class="border rounded-sm w-full">
+          </a>
+          
+          <div class="flex px-1 pt-2">
+            <div class="flex-1">
+              <p class="ff-helvetica font-semibold text-lg tracking-wider mb-2">Empatkali</p>
+              <p class="ff-helvetica text-sm text-c-5f5e5e flex-1 mb-4">Payment Portal and plugin for merchants.</p>
 
-        <div id="web-proj">
-          <div class="section-title wow fadeInRight web-project">
-            <p>Web Projects</p>
+              <div class="flex items-center flex-wrap">
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Vuejs
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  TailwindCSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Wordpress
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JQuery
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  HTML
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  CSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  PHP
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JavaScript
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start justify-end">
+              <a href="http://empatkali.co.id" class="ff-nunito ml-5 flex items-center justify-end text-blue-500 font-bold hover:underline">
+                Visit 
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-104174d2=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" data-v-104174d2=""></path></svg>
+              </a>
+            </div>
           </div>
-
-          <div class="projects-box">
-            <div class="project wow fadeInUp">
-              <a href="https://www.empatkali.co.id/" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/empatkali.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Empatkali</p>
-                  <p class="project-info">
-                    EMPATKALI is an easy payment solution for transactions made by consumers at our merchant partners both online and offline.
-                    The payment solution offered by EMPATKALI makes it easy for consumers who want to shop for their favorite items today, and they can pay it in four installments without incurring interest.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="project wow fadeInUp">
-              <a href="http://mednefits.com" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/mednefits.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Mednefits</p>
-                  <p class="project-info">
-                    Mednefits is health care benefits digital platform aimed to help companies provide health care benefits to their employees at lower costs.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="project wow fadeInUp">
-              <a href="http://nearest.com" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/nearest.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Nearest</p>
-                  <p class="project-info">
-                    Nearest.com is a socially conscious search engine that features the nearest businesses that provide the product or service being searched.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <!-- <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/1E25lzvCwtsb7ha1CI3kTYmaZLmXgsd_X/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/groupstar.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Group Star</p>
-                  <p class="project-info">
-                    PrecisionBit Singapore (Group Star) was born at the Innovation Hub of Telstra, one of Australia's leading telcos, with the purpose of empowering the modern business to communicate more creatively and stay on the cusp of our ever-shifting digital landscape.
-                  </p>
-                </div>
-              </a>
-            </div> -->
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/10bOWznphZq_3uaSfF__9IpbxYfxmtXI0/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/bigfit.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Bigfitness</p>
-                  <p class="project-info">
-                    Bigfitness is a booking or scheduling system for fitness establishments, and for people too see the establishments' promos, packages and services.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/1-RM_3fPmFsW7HAweiV2KqbEnHYava4S_/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/holistic.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Holistic</p>
-                  <p class="project-info">
-                    Holistic is an incredible team of receptionists and a process tailor-made for holistic practices, they provide you with the solution you need to lighten your daily worl load, helping you stay production
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/1gtEM8O6_cojtI-20JAY5aPN__WdMtbAD/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/traveltours.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Creative 360 Travel & Tours</p>
-                  <p class="project-info">
-                    Creative 360 Travel & Tours is a system for booking both local and international flights. They provide promos and package for group travellers and families.
-                  </p>
-                </div>
-              </a>
-            </div>
-            
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/14ASTlELezj4iiZOY-op-T9rEqlX7PbvU/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/truecare.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">TrueCare</p>
-                  <p class="project-info">
-                    TrueCare Family Medicine is a health care digital platform for cost saving medicine and services, and help companies provide health care benefits to their employees at lower costs.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/1woR-HezeOcxjJwZF_c2XIck7NPnz3_St/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/solaps.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Solaps</p>
-                  <p class="project-info"></p>
-                </div>
-              </a>
-            </div>
-            
-            <div class="project wow fadeInUp">
-              <a href="https://drive.google.com/file/d/1Jfzrx6V91N8KJiwZH1oNs7MoBGae_BH2/view?usp=sharing" target="_blank">
-                <div class="project-img">
-                  <img src="assets/img/projects/naturopathic.png">
-                </div>
-                <div class="project-desc">
-                  <p class="project-name">Naturopathic</p>
-                  <p class="project-info"></p>
-                </div>
-              </a>
-            </div>
-
-
-          </div> 
         </div>
-      </div>
-    </section>
 
-    <footer id="footer-container">
+        <div class="border rounded-md p-3 bg-white shadow-sm h-full">
+          <a href="https://www.mednefits.com/" target="_blank" class="flex w-full">
+            <img src="assets/img/projects/mednefits.png" class="border rounded-sm w-full">
+          </a>
+          
+          <div class="flex px-1 pt-2">
+            <div class="flex-1">
+              <p class="ff-helvetica font-semibold text-lg tracking-wider mb-2">Mednefits</p>
+              <p class="ff-helvetica text-sm text-c-5f5e5e flex-1 mb-4">Mobile App Clinic Booking and Insurance Benefits Credits System for Companies.</p>
 
-      <div class="footer-contact">
-
-        <div class="contact-column">
-
-          <div class="form-box" >
-            <textarea id="message-box" rows="8" class="form-element" name="" style="resize:none;" placeholder="Send a message..."  disabled></textarea> 
+              <div class="flex items-center flex-wrap">
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Laravel
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  AngularJs
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  React Native
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  HTML
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  CSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JQuery
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  PHP
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JavaScript
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start justify-end">
+              <a href="https://www.mednefits.com/" class="ff-nunito ml-5 flex items-center justify-end text-blue-500 font-bold hover:underline">
+                Visit 
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-104174d2=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" data-v-104174d2=""></path></svg>
+              </a>
+            </div>
           </div>
-
-          <div class="form-box text-center">
-            <button class="btn btn-send" style="cursor: not-allowed;" disabled>Send Now</button>
-          </div>
-
         </div>
-        <div class="contact-column"> 
 
-          <div class="contact-desc">
-            <i class="fa fa-google-plus"></i>
-            <p>jeamar1234@gmail.com</p>
-          </div>
-           <div class="contact-desc">
-            <i class="fa fa-skype"></i>
-            <p>jempols101</p>
-          </div>
-           <div class="contact-desc">
-            <i class="fa fa-map-marker"></i>
-            <p>Pacana-burgos Street,</p>
-          </div>
-           <div class="contact-desc">
-            <i class="fa"></i>
-            <p>Cagayan de Oro City,</p>
-          </div>
-           <div class="contact-desc">
-            <i class="fa"></i>
-            <p>Philippines 9000</p>
-          </div>
-           <div class="contact-desc">
-            <i class="fa fa-phone"></i>
-            <p>+639955332302</p>
-          </div>
+        <div class="border rounded-md p-3 bg-white shadow-sm h-full">
+          <a href="https://www.nearest.com/" target="_blank" class="flex w-full">
+            <img src="assets/img/projects/nearest.png" class="border rounded-sm w-full">
+          </a>
+          
+          <div class="flex px-1 pt-2">
+            <div class="flex-1">
+              <p class="ff-helvetica font-semibold text-lg tracking-wider mb-2">Nearest</p>
+              <p class="ff-helvetica text-sm text-c-5f5e5e flex-1 mb-4">A Web and Mobile App for searching and checking nearest local businesses.</p>
 
+              <div class="flex items-center flex-wrap">
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  Ionic
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  HTML
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  CSS
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  PHP
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JQuery
+                </div>
+                <div class="tracking-wider ff-helvetica py-1 px-2 text-xs bg-gray-200 text-gray-700 font-semibold rounded-full mr-1 mb-1 mt-0">
+                  JavaScript
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start justify-end">
+              <a href="https://www.nearest.com/" class="ff-nunito ml-5 flex items-center justify-end text-blue-500 font-bold hover:underline">
+                Visit 
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-v-104174d2=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" data-v-104174d2=""></path></svg>
+              </a>
+            </div>
+          </div>
         </div>
+
+        
         
       </div>
+    </div>
+  </section>
 
-      <div class="footer-copyright">
-        <p class="">&copy; 2020 Jeamar Libres. All rights reserved.</p>
+  <section id="contact" class="bg-black">
+    <div class="w-10/12 max-w-lg mx-auto flex flex-col md:flex-row py-10">
+      <div class="w-full mb-20 md:mb-0">
+        <p class="text-white ff-helvetica-medium font-bold mb-5 text-2xl">Contact Me</p>
+        <form method="post">
+          <div class="mb-5">
+            <div class="flex">
+              <div class="input-div w-full mb-5 mr-2 relative">
+                <div class="icon absolute text-xl top-2.5 left-3 border-r pr-3">
+                  <i class="fa fa-user text-gray-400"></i>
+                </div>
+                <input id="name" type="text" class="w-full py-3 pl-12 pr-3 text-gray-700 ff-roboto font-semibold text-sm border border-gray-300 rounded-sm" placeholder="Name">
+              </div>
+              <div class="input-div w-full mb-5 ml-2 relative">
+                <div class="icon absolute text-xl top-2.5 left-2 border-r pr-2">
+                  <i class="fa fa-envelope text-gray-400"></i>
+                </div>
+                <input id="email" type="text" class="w-full py-3 pl-12 pr-3 text-gray-700 ff-roboto font-semibold text-sm border border-gray-300 rounded-sm" placeholder="Email">
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 mb-5">
+              <textarea id="message" class="w-full py-3 px-3 h-28 text-gray-700 ff-roboto font-semibold text-sm border border-gray-300 rounded-sm" style="resize: none;" placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <button type="button" class="btn w-full md:w-auto bg-black text-gray-300 text-sm px-20 rounded border border-gray-300 py-2 font-bold" onclick="sendEmail()">Send</button>
+          </div>
+        </form>
       </div>
+    </div>
+  </section>
+  
 
-    </footer>
-    
-  </body>
+  <footer class="bg-black">
+    <div class="flex items-center justify-center py-8 border-t border-gray-700 w-10/12 md:w-full mx-auto">
+      <div class="text-gray-300 ff-helvetica font-bold text-center">&copy; 2021 Jeamar Libres. All rights reserved</div>
+    </div>
+    <!-- <div class="gradient-white">
+      <a class="top" href="#top">back to top</a>
+    </div> -->
+  </footer>
+  
+</body>
 
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/wow.js"></script>
-  <script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+    $(document).on('click', 'a[href^="#"]', function(e) {
+      var id = $(this).attr('href');
+      var $id = $(id);
+      if ($id.length === 0) {
+          return;
+      }
+      e.preventDefault();
+      var pos = $id.offset().top;
+      $('body, html').animate({scrollTop: pos},'slow');
+    });
+
+
+    // Mobile header toggle
+    $("#mobile-header-toggle").on('click', function(e) {
+      var headerMenu = $("#nav-menu");
+      console.log(headerMenu.hasClass('hidden'));
+
+      if(headerMenu.hasClass('hidden')){
+        headerMenu.removeClass('hidden');
+      }else{
+        headerMenu.addClass('hidden');
+      }
+
+    });
+
+    // Hide mobile header on click outside
+    $(document).click(function (e) {
+      if ($(e.target).parents("#main-header").length === 0 || $(e.target).parents("#nav-menu").length != 0) {
+        var headerMenu = $("#nav-menu");
+        headerMenu.addClass('hidden');
+      }
+    });
+  });
+
+  function sendEmail() {
+    var name = $("form #name").val();
+    var email = $("form #email").val();
+    var message = $("form #message").val();
+    var subject = 'From ' + (name != '' ? name : email);
+    if(name != '' && message != ''){
+      window.location.href = "mailto:jeamar1234@gmail.com?subject="+name+"&body="+message;
+    }
+  }
+</script>
 
 </html>
